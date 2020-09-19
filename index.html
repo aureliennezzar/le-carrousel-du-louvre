@@ -6,24 +6,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Carrousel du Louvre</title>
 	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="styles/index.css">
-	<link rel="stylesheet" href="styles/header/header.css">
-	<link rel="stylesheet" href="styles/footer/footer.css">
+	<link rel="stylesheet" href="./assets/style/index.css">
 </head>
 
 <body>
+	<aside class="body_background">
+		<div class="separator separator_ext"></div>
+		<div class="separator separator_int"></div>
+		<div class="separator separator_int"></div>
+		<div class="separator separator_ext"></div>
+	</aside>
 	<header>
 		<nav class="header_nav">
 			<ul class="header_nav_left">
 				<li class="header_nav_item subnav">
-					<span class="header_nav_link">oeuvres<img src="./assets/down-arrow.svg" alt="" srcset="">
+					<span class="header_nav_link">oeuvres<img src="./assets/img/down-arrow.svg" alt="" srcset="">
 					</span>
 				</li>
 				<li class="header_nav_item">exposants</li>
 				<li class="header_nav_item">rdv virtuel</li>
 			</ul>
 			<a href="#" rel="home">
-				<img src="./assets/carrousel-logo.png" alt="" srcset="">
+				<img src="./assets/img/carrousel-logo.png" alt="" srcset="">
 			</a>
 			<ul class="header_nav_right">
 				<li class="header_nav_item">finearts-paris.fr</li>
@@ -31,18 +35,57 @@
 				<li class="header_nav_item">ma liste</li>
 			</ul>
 		</nav>
+		<section class="gallery">
+
+			<div class="gallery_left">
+				<div class="gallery_image_wrapper">
+					<img src="./assets/img/header1.png" alt="gallery picture" srcset="">
+				</div>
+
+				<div class="gallery_footer">
+					<div class="gallery_data"></div>
+					<div class="gallery_buttons">
+						<div class="gallery_button gallery_like">
+							<img src="./assets/img/hearth.svg" alt="like button" srcset="">
+						</div>
+						<div class="gallery_button gallery_larrow gallery_arrow">
+							<img src="./assets/img/left-arrow.svg" alt="left arrow" srcset="">
+
+						</div>
+						<div class="gallery_button gallery_rarrow gallery_arrow">
+							<img src="./assets/img/right-arrow.svg" alt="right arrow" srcset="">
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="gallery_right">
+				<img src="./assets/img/header2.png" alt="" srcset="" class="gallery_image">
+				<img src="./assets/img/header3.png" alt="" srcset="" class="gallery_image">
+				<img src="./assets/img/header4.png" alt="" srcset="" class="gallery_image">
+			</div>
+		</section>
 	</header>
 	<section class="exposants">
+		<h2>les exposants</h2>
+		<div class="carousel">
+
+		</div>
 
 	</section>
 	<section class="categories">
+		<h2>catégories</h2>
 
 	</section>
-	<section class="">
-
-	</section>
-	<footer>
-		<img src="./assets/Bitmap.png" alt="" srcset="">
+	<!-- <section class="advertisements">
+		<div class="advertisements_wrapper">
+			<img src="./assets/img/pub1.png" alt="" srcset="">
+			<img src="./assets/img/pub2.png" alt="" srcset="">
+		</div>
+	</section> -->
+	<!-- <footer>
+		<img src="./assets/img/Bitmap.png" alt="" srcset="">
 		<div class="footer_item">
 			<div class="footer_item_header">nous Suivre</div>
 			<ul class="footer_links">
@@ -63,9 +106,9 @@
 
 		<div class="footer_item footer_input_wrap">
 			<input type="text" placeholder="recherche" class="footer_search_input">
-			<img src="./assets/search-icon.svg" alt="search icon" srcset="">
+			<img src="./assets/img/search-icon.svg" alt="search icon" srcset="">
 		</div>
-	</footer>
+	</footer> -->
 
 </body>
 

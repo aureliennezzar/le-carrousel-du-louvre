@@ -1,0 +1,120 @@
+nav {
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: space-between;
+	height: 90px;
+	width: 100%;
+	border-bottom: 1px solid #8e86a4;
+	color: #190d45;
+	font-family: "Avenir-Medium";
+	background: #fff;
+	a {
+		position: absolute;
+		right: 50%;
+		transform: translateX(50%);
+	}
+	ul {
+		list-style: none;
+		display: flex;
+		:last-child {
+			border-right: 0;
+		}
+		li {
+			text-transform: uppercase;
+			display: flex;
+			align-items: center;
+			padding: 0 20px;
+			height: 30px;
+			font-size: 10px;
+			font-weight: 400;
+			line-height: 13px;
+			letter-spacing: 1.6666666px;
+			border-right: 1px solid #d1ceda;
+			cursor: pointer;
+		}
+	}
+	span.header_nav_link img {
+		padding-left: 20px;
+	}
+	.header_nav_right {
+		padding-right: 65px;
+	}
+	.header_nav_left {
+		padding-left: 65px;
+	}
+}
+
+.gallery {
+	display: flex;
+	width: 100%;
+	height: 570px;
+	.gallery_right {
+		display: flex;
+		flex-direction: column;
+		width: 340px;
+		margin-left: 2px;
+		overflow: hidden;
+		img {
+			width: 100%;
+			margin-bottom: 2px;
+			height: 33.3%;
+			object-fit: cover;
+		}
+		:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.gallery_left {
+		width: calc(100% - 340px);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		.gallery_footer {
+			display: flex;
+			width: 100%;
+			height: 135px;
+			.gallery_data {
+				width: 50vw;
+				height: 100%;
+				background: #190d45;
+			}
+			.gallery_buttons {
+				display: flex;
+				width: calc(100% - 50vw);
+				height: 100%;
+				border: none;
+				div {
+					width: 33.3%;
+					background: #fff;
+				}
+				.gallery_arrow {
+					border-bottom: 1px solid #dddbe3;
+				}
+				.gallery_button {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					cursor: pointer;
+				}
+				.gallery_like {
+					border-left: 1px solid #dddbe3;
+					background: #190d45;
+				}
+				.gallery_rarrow {
+					border-left: 1px solid #190d45;
+				}
+			}
+		}
+		.gallery_image_wrapper {
+			background: #fff;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}

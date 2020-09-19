@@ -1,0 +1,18 @@
+section.advertisements{
+	display: flex;
+	align-items: center;
+	width: 940px;
+	height: 480px;
+	background: #F1F2F6;
+	.advertisements_wrapper{
+		display: flex;
+		padding-left: 85px;
+		:first-child{
+			padding-right: 25px;
+		}
+	}
+	img{
+		height: 373px;
+		cursor: pointer;
+	}
+}
