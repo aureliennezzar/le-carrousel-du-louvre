@@ -11,14 +11,18 @@ footer {
 	.footer_item {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-between;
 		width: 160px;
-		height: 100%;
+		height: 145px;
 		ul {
+			display: flex;
+			flex-direction: column;
 			padding-top: 5px;
+			width: 100%;
+			height: 100%;
 			list-style: none;
+			justify-content: space-evenly;
 			li {
-				padding-top: 20px;
 				color: #808085;
 				font-size: 15px;
 				font-weight: 400;
@@ -46,6 +50,9 @@ footer {
 			background: none;
 			border: none;
 			border-bottom: 1px solid #dfdfdf;
+		}
+		.footer_search_input:focus{
+			outline: 0;
 		}
 		.footer_search_input::placeholder {
 			color: #190d45;
