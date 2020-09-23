@@ -4,93 +4,161 @@ section.exposants {
 	justify-content: center;
 	flex-direction: column;
 	width: 100vw;
-	margin-bottom:100px;
-	.exposants_button{
-		color: #fff;
-		padding: 20px 75px;
-		border: none;
-		font-family: "Avenir-Medium";
-		font-size: 12px;
-		font-weight: 400;
-		line-height: 16px;
-		text-align: center;
-		text-transform: uppercase;
-		background: #190d45;
-		cursor: pointer;
-	}
-	.carousel {
-		position: relative;
+	margin-bottom: 100px;
+}
+img.item_link_arrow {
+	margin-left: 10px;
+	width: 17px;
+	height: auto;
+}
+.exposants_button {
+	color: #fff;
+	padding: 20px 75px;
+	border: none;
+	font-family: "Avenir-Medium";
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	background: $base-color;
+	cursor: pointer;
+}
+.carousel {
+	position: relative;
+	display: flex;
+	width: 81%;
+	height: 400px;
+	background: $secondary-color;
+	align-self: flex-end;
+	z-index: 1;
+	margin-top: 100px;
+}
+.carousel_grab_wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 60px;
+	right: 150px;
+	opacity: 0.85498047;
+	width: 80px;
+	height: 80px;
+	background: #fff9c0;
+	border-radius: 50%;
+	.carousel_grab {
+		user-select: none;
 		display: flex;
-		width: 81%;
+		align-items: center;
+		justify-content: center;
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		border: 1px solid$base-color;
+		cursor: grab;
+	}
+}
+.carousel_list {
+	display: flex;
+	flex-wrap: nowrap;
+	position: absolute;
+	width: 100vw;
+	justify-content: space-between;
+	top: -70px;
+	left: -95px;
+	list-style: none;
+	li {
+		display: flex;
+		flex-direction: column;
+		min-width: 255px;
+		max-width: 255px;
 		height: 400px;
-		background: #f1f2f6;
-		align-self: flex-end;
-		z-index: 1;
-		margin-top:100px;
-		.carousel_grab_wrap{
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			position: absolute;
-			top: 60px;
-			right: 150px;
-			opacity: 0.85498047;
-			width: 80px;
-			height: 80px;
-			background: #fff9c0;
-			border-radius: 50%;
-			.carousel_grab{
-				user-select: none;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				width: 70px;
-				height: 70px;
-				border-radius: 50%;
-				border: 1px solid #190d45;
-				cursor: grab;
-
+		justify-content: space-around;
+		word-wrap: break-word;
+		margin-right: 30px;
+		.item_link_image {
+			width: 100%;
+			height: auto;
+		}
+		p {
+			color: $base-color;
+			font-family: "Libre Baskerville";
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 22px;
+		}
+		a {
+			color: $base-color;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-family: "Avenir-Book";
+			font-size: 10px;
+			font-weight: 400;
+			line-height: 13px;
+			letter-spacing: 0.8333333px;
+		}
+	}
+}
+@media screen and (max-width: 800px) {
+	.carousel {
+		width: 100%;
+		height: 300px;
+	}
+	.carousel_list {
+		left: 30px;
+		li {
+			min-width: 190px;
+			height: 300px;
+			p {
+				font-size: 15px;
+			}
+			a {
+				font-size: 11px;
 			}
 		}
-		.carousel_list {
-			display: flex;
-			position: absolute;
-			width: 100vw;
-			justify-content: space-between;
-			top: -70px;
-			left: -95px;
-			list-style: none;
-			li {
-				display: flex;
-				flex-direction: column;
-				width: 255px;
-				height: 400px;
-				justify-content: space-around;
-				overflow: hidden;
-				word-break: break-all;
-				margin-right: 30px;
-				img{
-					max-width: 100%;
-				}
-				p {
-					color: #190d45;
-					font-family: "Libre Baskerville";
-					font-size: 18px;
-					font-weight: 400;
-					line-height: 22px;
-				}
-				a{
-					color: #190d45;
-					text-transform: uppercase;
-					text-decoration: none;
-					font-family: "Avenir-Book";
-					font-size: 10px;
-					font-weight: 400;
-					line-height: 13px;
-					letter-spacing: 0.8333333px;
-				}
-			}
-		}	
 	}
 
+	.carousel_grab_wrap {
+		right: 100px;
+		top: 45px;
+		width: 60px;
+		height: 60px;
+
+		.carousel_grab {
+			width: 50px;
+			height: 50px;
+			img {
+				width: 21px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 600px) {
+	.carousel {
+		width: 100%;
+		height: 250px;
+	}
+	.carousel_list {
+		left: 22.5px;
+		li {
+			min-width: 142.5px;
+			p {
+				font-size: 13.5px;
+			}
+			a {
+				font-size: 9px;
+			}
+		}
+	}
+
+	.carousel_grab_wrap {
+		right: 50px;
+		top: 34px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.exposants_button {
+		width: 100%;
+	}
 }

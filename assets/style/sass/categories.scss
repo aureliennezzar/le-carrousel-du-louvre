@@ -15,11 +15,11 @@ section.categories {
 		padding: 0 100px;
 		li{
 			padding: 20px 20px 20px 10px;
-			border: 1px solid #190d45;
+			border: 1px solid $base-color;
 			background:#fff;
 			margin: 5px 5px;
 			a{
-				color: #190d45;
+				color: $base-color;
 				text-decoration: none;
 				font-family: "Avenir-Medium";
 				font-size: 12px;
@@ -34,12 +34,20 @@ section.categories {
 		
 		li:hover{
 				cursor: pointer;
-				background:#190d45;
+				background:$base-color;
 				a{
 					color: #fff;
 					transition: color .2s;
 				}
 				transition: background .2s;
+		}
+	}
+}
+@media screen and (max-width: 720px) {
+	section.categories{
+
+		.categories_list{
+			padding: 0;
 		}
 	}
 }

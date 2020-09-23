@@ -1,65 +1,7 @@
-@import "./sass/footer.scss";
-@import "./sass/header.scss";
-@import "./sass/advertisements.scss";
-@import "./sass/categories.scss";
-@import "./sass/exposants.scss";
-*,
-::after,
-::before {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-body {
-	position: relative;
-	overflow-x: hidden;
-}
-.section_title_wrap {
-	transform: translateX(21px);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: auto;
-
-	.section_title {
-		text-transform: uppercase;
-		font-size: 20px;
-		font-weight: 700;
-		line-height: 25px;
-		letter-spacing: 1px;
-		font-family: "Libre Baskerville";
-		-webkit-text-stroke: solid 1px #190d45;
-		color: #190d45;
-		transform: translateX(-25px);
-	}
-}
-.section_title_circle {
-	width: 67px;
-	height: 67px;
-	border-radius: 50%;
-	background: #fff9c0;
-	display: block;
-	z-index: -1;
-}
-.body_background {
-	display: flex;
-	z-index: -1;
-	position: fixed;
-	width: 100vw;
-	height: 100%;
-	.separator_ext {
-		width: 19%;
-	}
-	.separator_int {
-		width: 31%;
-	}
-	.separator {
-		border-left: 1px solid #dddbe3;
-	}
-	:first-child {
-		border: none;
-	}
-}
+$base-color: #190d45;
+$secondary-color: #f1f2f6;
+$third-color: #dddbe3;
+$nav-height: 90px;
 
 @font-face {
 	font-family: "Avenir-Book";
@@ -82,3 +24,13 @@ body {
 	font-style: normal;
 	font-display: swap;
 }
+@import "./sass/scrollReveal.scss";
+@import "./sass/footer.scss";
+@import "./sass/gallery.scss";
+@import "./sass/advertisements.scss";
+@import "./sass/categories.scss";
+@import "./sass/exposants.scss";
+@import "./sass/main.scss";
+@import "./sass/navbar.scss";
+@import "./sass/burgerNav.scss";
+@import "./sass/mediaqueries.scss";

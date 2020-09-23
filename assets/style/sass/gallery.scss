@@ -1,0 +1,112 @@
+.gallery {
+	display: flex;
+	width: 100%;
+	max-height: 570px;
+}
+.gallery_right {
+	display: flex;
+	flex-direction: column;
+	width: 340px;
+	margin-left: 2px;
+	overflow: hidden;
+	img {
+		width: 100%;
+		margin-bottom: 2px;
+		height: 33.3%;
+		object-fit: cover;
+	}
+	:last-child {
+		margin-bottom: 0;
+	}
+}
+.gallery_left {
+	width: calc(100% - 340px);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.gallery_image_wrapper {
+	background: white;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	height: 55vw;
+	img {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100vw;
+		object-fit: cover;
+	}
+}
+.gallery_footer {
+	display: flex;
+	width: 100%;
+	min-height: 135px;
+}
+.gallery_buttons {
+	display: flex;
+	width: calc(100% - 50vw);
+	height: 100%;
+	border: none;
+}
+.gallery_arrow {
+	background: #fff;
+	border-bottom: 1px solid$third-color;
+}
+.gallery_button {
+	user-select: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.gallery_like {
+	width: 30%;
+	border-left: 1px solid$third-color;
+	background: $base-color;
+}
+.gallery_rarrow {
+	border-left: 1px solid $base-color;
+	width: 35%;
+}
+.gallery_larrow {
+	width: 35%;
+}
+.gallery_data_wrap {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	width: 50vw;
+	height: 100%;
+	background: $base-color;
+}
+.gallery_progress {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 95%;
+	height: 3px;
+	background: #fff;
+	transition: .2s;
+}
+.gallery_image_title {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 22px;
+	font-family: "Libre Baskerville";
+}
+.gallery_image_meta {
+	text-transform: uppercase;
+	font-family: "Avenir-Light";
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 1.3333334px;
+}
+.gallery_like_data {
+	display: none;
+}
