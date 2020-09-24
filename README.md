@@ -28,7 +28,7 @@ Pour ce faire, j'ai d'abord listé les fonctionnalités visibles sur la maquette
 - Optimisation des ressources (images, polices)
 - Création du favicon
 
-# The Carrousel du Louvre [EN].
+# The Carrousel du Louvre [EN]
 
 ### Installation : 
 Launch the `live-server` command at the root of the project.
