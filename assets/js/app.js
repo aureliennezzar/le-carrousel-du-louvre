@@ -1,5 +1,4 @@
 window.addEventListener("DOMContentLoaded", () => {
-	fetch('/assets/data/header.json')
 	const carousel_list = document.querySelector('.carousel_list')
 	const categories_list = document.querySelector('.categories_list')
 	const categories_data = ["archéologie",

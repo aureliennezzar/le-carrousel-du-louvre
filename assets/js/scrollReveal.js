@@ -6,7 +6,6 @@ window.addEventListener('DOMContentLoaded', () => {
 	document.querySelectorAll('.reveal').forEach((e) => {
 		observer.observe(e)
 	})
-	document.documentElement.classList.add('reveal-loaded')
 })
 // SCROLL REVEAL
 const revealRatio = .1
@@ -24,3 +23,4 @@ const handleIntersect = (entries, observer) => {
 		}
 	})
 }
+document.documentElement.classList.add('reveal-loaded')
