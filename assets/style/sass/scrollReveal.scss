@@ -1,21 +1,54 @@
-.reveal {
-	opacity: 0;
-	-webkit-transform: translateY(-30px) !important;
-	-ms-transform: translateY(-30px) !important;
+.reveal-loaded .reveal [class*="reveal-"] {
+	opacity: 0 !important;
 	transform: translateY(-30px) !important;
-    -moz-transition: 0.75s cubic-bezier(0.5, 0, 0, 1);
-	-webkit-transition: 0.75s cubic-bezier(0.5, 0, 0, 1);
-	-o-transition: 0.75s cubic-bezier(0.5, 0, 0, 1);
-	transition: 0.75s cubic-bezier(0.5, 0, 0, 1);
+	transition: opacity 0s, transform 0s !important;
 }
-.revealed {
-	opacity: 1;
-	-webkit-transform: translateY(0) !important;
-	-ms-transform: translateY(0) !important;
-	transform: translateY(0) !important;
-    -moz-transition: 0.75s cubic-bezier(0.5, 0, 0, 1);
-	-webkit-transition: 0.75s cubic-bezier(0.5, 0, 0, 1);
-	-o-transition: 0.75s cubic-bezier(0.5, 0, 0, 1);
-	transition: 0.75s cubic-bezier(0.5, 0, 0, 1);
+.reveal-loaded [class*="reveal-"] {
+	transition: opacity 0.75s cubic-bezier(0.5, 0, 0, 1), transform 0.75s cubic-bezier(0.5, 0, 0, 1);
 	will-change: opacity;
+}
+@for $i from 1 through 6 {
+	.reveal-loaded .reveal-#{$i + 1} {
+		transition-delay: 0.1s * $i;
+	}
+}
+//CATEGORIE SCROLL REVEAL
+.reveal-loaded .categories_list .reveal [class*="reveal-"] {
+	opacity: 0 !important;
+	transform: translateY(-30px) !important;
+	transition: opacity 0s, transform 0s !important;
+}
+.reveal-loaded .categories_list [class*="reveal-"] {
+	transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1), transform 0.6s cubic-bezier(0.5, 0, 0, 1);
+	will-change: opacity;
+}
+@for $i from 1 through 10 {
+	.reveal-loaded .categories_list .reveal-#{$i + 1} {
+		transition-delay: 0.1s * $i;
+	}
+}
+//CAROUSEL SCROLL REVEAL
+.reveal-loaded .carousel_list .reveal [class*="reveal-"] {
+	opacity: 0 !important;
+	transform: translateY(-30px) !important;
+	transition: opacity 0s, transform 0s !important;
+}
+.reveal-loaded .carousel_list [class*="reveal-"] {
+	transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1), transform 0.6s cubic-bezier(0.5, 0, 0, 1);
+	will-change: opacity;
+}
+@for $i from 1 through 10 {
+	.reveal-loaded .carousel_list .reveal-#{$i + 1} {
+		transition-delay: 0.1s * $i;
+	}
+}
+@media (prefers-reduced-motion: reduce) {
+	.reveal-loaded .reveal [class*="reveal-"] {
+		opacity: 1 !important;
+		transform: translateY(0px) !important;
+	}
+	.reveal-loaded [class*="reveal-"] {
+		transition-duration: 0s !important;
+		transition-delay: 0s !important;
+	}
 }

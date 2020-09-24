@@ -3,14 +3,14 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>Carrousel du Louvre</title>
 	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./assets/style/index.css">
-	<script src="./assets/js/app.js" defer></script>
+	<script type="text/javascript" src="./assets/js/app.js" defer></script>
 </head>
 
-<body>
+<body id="body">
 	<!-- BODY BACKGROUND-->
 	<aside class="body_background">
 		<div class="separator separator_ext"></div>
@@ -41,9 +41,9 @@
 
 			<!-- BURGER-->
 			<button class="header_nav_burger">
-				<div></div>
-				<div></div>
-				<div></div>
+				<span class="burger_bar"></span>
+				<span class="burger_bar"></span>
+				<span class="burger_bar"></span>
 			</button>
 			<div class="nav_burger_menu">
 				<div class="burger_menus_wrap">
@@ -76,36 +76,37 @@
 				<div class="gallery_footer">
 					<div class="gallery_data_wrap">
 						<span class="gallery_progress"></span>
-						<div class="gallery_data">
-							<h2 class="gallery_image_title reveal">Venise, le môle à l'entrée du grand canal et la Salute.</h2>
-							<p class="gallery_image_meta reveal">eugene boudin, 1885 / gallerie perrotin</p>
+						<div class="gallery_data reveal">
+							<h2 class="gallery_image_title reveal-1">Venise, le môle à l'entrée du grand canal et la
+								Salute.</h2>
+							<p class="gallery_image_meta reveal-2">eugene boudin, 1885 / galerie perrotin</p>
 						</div>
 						<div class="gallery_button gallery_like_data">
-							<img src="./assets/img/hearth.svg" alt="like button" srcset="">
+							<img class="like_image" src="./assets/img/hearth-empty.png" alt="like button" srcset="">
 						</div>
 					</div>
 					<div class="gallery_buttons">
-						<div class="gallery_button gallery_like">
-							<img src="./assets/img/hearth.svg" alt="like button" srcset="">
-						</div>
-						<div class="gallery_button gallery_larrow gallery_arrow">
+						<button class="gallery_button gallery_like">
+							<img class="like_image" src="./assets/img/hearth-empty.png" alt="like button" srcset="">
+						</button>
+						<button class="gallery_button gallery_larrow gallery_arrow">
 							<img src="./assets/img/left-arrow.svg" alt="left arrow" srcset="">
 
-						</div>
-						<div class="gallery_button gallery_rarrow gallery_arrow">
+						</button>
+						<button class="gallery_button gallery_rarrow gallery_arrow">
 							<img src="./assets/img/right-arrow.svg" alt="right arrow" srcset="">
 
-						</div>
+						</button>
 					</div>
 				</div>
 			</div>
 
 			<div class="gallery_right">
-				<img class="gallery_right_img gallery_img1" src="./assets/img/header2.png" alt="" srcset=""
+				<img class="gallery_right_img gallery_img3" src="./assets/img/header4.png" alt="" srcset=""
 					class="gallery_image">
 				<img class="gallery_right_img gallery_img2" src="./assets/img/header3.png" alt="" srcset=""
 					class="gallery_image">
-				<img class="gallery_right_img gallery_img3" src="./assets/img/header4.png" alt="" srcset=""
+				<img class="gallery_right_img gallery_img1" src="./assets/img/header2.png" alt="" srcset=""
 					class="gallery_image">
 			</div>
 		</section>
@@ -116,12 +117,12 @@
 
 		<!-- EXPOSANTS CAROUSEL SECTION -->
 		<section class="exposants">
-			<div class="section_title_wrap reveal">
+			<div class="section_title_wrap">
 				<div class="section_title_circle"></div>
 				<h2 class="section_title">les exposants</h2>
 			</div>
 			<div class="carousel">
-				<ul class="carousel_list">
+				<ul class="carousel_list reveal">
 					<!-- generated with javascript -->
 				</ul>
 				<div class="carousel_grab_wrap">
@@ -136,11 +137,11 @@
 
 		<!-- CATEGORIES SECTION -->
 		<section class="categories">
-			<div class="section_title_wrap reveal">
+			<div class="section_title_wrap ">
 				<div class="section_title_circle"></div>
 				<h2 class="section_title">catégories</h2>
 			</div>
-			<ul class="categories_list">
+			<ul class="categories_list reveal">
 				<!-- generated with javascript -->
 			</ul>
 		</section>
@@ -157,12 +158,12 @@
 
 	<!-- FOOTER -->
 	<footer>
-		<div class="footer_items">
+		<div class="footer_items reveal">
 			<div class="footer_brand_wrap">
 				<img class="footer_brand_logo" src="./assets/img/Bitmap.png" alt="Brand logo" srcset="">
 			</div>
 
-			<div class="footer_item  reveal">
+			<div class="footer_item">
 				<div class="footer_item_header">nous suivre</div>
 				<ul class="footer_links">
 					<li class="footer_link">facebook</li>
@@ -171,7 +172,7 @@
 				</ul>
 			</div>
 
-			<div class="footer_item  reveal">
+			<div class="footer_item">
 				<div class="footer_item_header">onglets</div>
 				<ul class="footer_links">
 					<li class="footer_link">oeuvres</li>
@@ -180,7 +181,7 @@
 				</ul>
 			</div>
 
-			<div class="footer_item footer_input_wrap  reveal">
+			<div class="footer_item footer_input_wrap">
 				<input type="text" placeholder="recherche" class="footer_search_input">
 				<img src="./assets/img/search-icon.svg" alt="search icon" srcset="">
 			</div>

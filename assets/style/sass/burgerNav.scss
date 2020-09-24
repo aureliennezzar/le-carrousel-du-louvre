@@ -11,15 +11,12 @@
 	cursor: pointer;
 	display: none;
 	z-index: 3;
-	div {
-		width: 100%;
+	.burger_bar {
+		width: 35px;
 		height: 2px;
 		background: $base-color;
 		margin-bottom: 8px;
 	}
-}
-.header_nav_burger:focus{
-	outline: none;
 }
 .nav_burger_second, .nav_burger_first{
 	display: none;

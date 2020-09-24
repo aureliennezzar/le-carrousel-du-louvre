@@ -5,7 +5,7 @@ section.exposants {
 	flex-direction: column;
 	width: 100vw;
 	margin-bottom: 100px;
-	overflow-x:hidden
+	overflow-x: hidden;
 }
 img.item_link_arrow {
 	margin-left: 10px;
@@ -15,7 +15,6 @@ img.item_link_arrow {
 .exposants_button {
 	color: #fff;
 	padding: 20px 75px;
-	border: none;
 	font-family: "Avenir-Medium";
 	font-size: 12px;
 	font-weight: 400;
@@ -42,11 +41,12 @@ img.item_link_arrow {
 	position: absolute;
 	top: 60px;
 	right: 150px;
-	opacity: 0.85498047;
+	opacity: 0.85;
 	width: 80px;
 	height: 80px;
 	background: #fff9c0;
 	border-radius: 50%;
+	cursor: grab;
 	.carousel_grab {
 		user-select: none;
 		display: flex;
@@ -56,14 +56,16 @@ img.item_link_arrow {
 		height: 70px;
 		border-radius: 50%;
 		border: 1px solid$base-color;
-		cursor: grab;
+		img {
+			pointer-events: none;
+		}
 	}
 }
 .carousel_list {
 	display: flex;
 	flex-wrap: nowrap;
 	position: absolute;
-	width: 100vw;
+	min-width: 100vw;
 	justify-content: space-between;
 	top: -70px;
 	left: -95px;
@@ -79,7 +81,9 @@ img.item_link_arrow {
 		margin-right: 30px;
 		.item_link_image {
 			width: 100%;
-			height: auto;
+			height: 319px;
+			pointer-events: none;
+			user-select: none;
 		}
 		p {
 			color: $base-color;
@@ -100,6 +104,19 @@ img.item_link_arrow {
 		}
 	}
 }
+.carousel_list::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 0;
+	height: 0;
+	display: none;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none;
+	overflow-y: hidden;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: none; // IE 10+
+	overflow: -moz-scrollbars-none; // Firefox
+}
 @media screen and (max-width: 800px) {
 	.carousel {
 		width: 100%;
@@ -108,6 +125,9 @@ img.item_link_arrow {
 	.carousel_list {
 		left: 30px;
 		li {
+			.item_link_image {
+				height: 248.5px;
+			}
 			min-width: 190px;
 			height: 300px;
 			p {
@@ -142,6 +162,9 @@ img.item_link_arrow {
 	.carousel_list {
 		left: 22.5px;
 		li {
+			.item_link_image {
+				height: 186.3px;
+			}
 			min-width: 142.5px;
 			p {
 				font-size: 13.5px;

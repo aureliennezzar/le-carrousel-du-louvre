@@ -42,17 +42,20 @@
 .gallery_footer {
 	display: flex;
 	width: 100%;
+	height: 135px;
 	min-height: 135px;
+	max-height: 135px;
 }
 .gallery_buttons {
 	display: flex;
 	width: calc(100% - 50vw);
 	height: 100%;
 	border: none;
+	touch-action: manipulation;
 }
 .gallery_arrow {
 	background: #fff;
-	border-bottom: 1px solid$third-color;
+	border-bottom: 1px solid $third-color;
 }
 .gallery_button {
 	user-select: none;
@@ -63,8 +66,8 @@
 }
 .gallery_like {
 	width: 30%;
-	border-left: 1px solid$third-color;
-	background: $base-color;
+	border-left: 1px solid $third-color;
+	background-color: $base-color;
 }
 .gallery_rarrow {
 	border-left: 1px solid $base-color;
@@ -88,7 +91,7 @@
 	top: 0;
 	left: 0;
 	position: absolute;
-	width: 95%;
+	width: 5%;
 	height: 3px;
 	background: #fff;
 	transition: .2s;
@@ -109,4 +112,13 @@
 }
 .gallery_like_data {
 	display: none;
+}
+.animate_images{
+	animation-name: animate_images;
+	animation-duration: .2s ;
+}
+
+@keyframes animate_images{
+	from{opacity: 0.5;}
+	to{opacity: 1;}
 }

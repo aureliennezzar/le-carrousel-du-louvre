@@ -13,6 +13,12 @@ header{
 	margin-top: $nav-height;
 	margin-bottom: 70px;
 }
+button{
+	border: none;
+}
+button:focus{
+	outline: none;
+}
 .section_title_wrap {
 	transform: translateX(21px);
 	display: flex;
@@ -43,7 +49,7 @@ header{
 .body_background {
 	display: flex;
 	z-index: -1;
-	position: fixed;
+	position: absolute;
 	width: 100vw;
 	height: 100%;
 	.separator_ext {
