@@ -17,12 +17,8 @@ const handleIntersect = (entries, observer) => {
 }
 
 document.documentElement.classList.add('reveal-loaded')
-window.addEventListener('DOMContentLoaded', () => {
-	// SCROLL REVEAL
 
-	//Start Observer
-	const observer = new IntersectionObserver(handleIntersect, options);
-	document.querySelectorAll('.reveal').forEach((e) => {
-		observer.observe(e)
-	})
+const observer = new IntersectionObserver(handleIntersect, options);
+document.querySelectorAll('.reveal').forEach((e) => {
+	observer.observe(e)
 })
