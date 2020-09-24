@@ -9,13 +9,13 @@ Le temps imparti pour ce projet était d'une semaine. Durant cette semaine, j'ai
 
 ## Déroulement intégration : 
 Dans un premier temps, il était nécessaire de réaliser la structure de la page après avoir analysé les besoins techniques pour la réalisation de la maquette.
-Ainsi j'ai tout de suite organisé mes dossiers en y intégrant les ressources fournit par la maquette.
+Ainsi j'ai tout de suite organisé mes dossiers en y intégrant les ressources fournies par la maquette.
 
-Une fois que la structure sans responsive et statique était terminé j'ai alors commencé à entreprendre l'aspect "responsive" jusqu'à 320px de largeur, rendant le site compatible avec tout type d'appareils (desktop, mobile ou tablette), par conséquent, j'ai testé la comptabilité Cross-Browser et Cross-Platform.
+Une fois que la structure sans responsive et statique était terminée j'ai alors commencé à entreprendre l'aspect "responsive" jusqu'à 320px de largeur, rendant le site compatible avec tout type d'appareils (desktop, mobile ou tablette), par conséquent, j'ai testé la comptabilité Cross-Browser et Cross-Platform.
 
 Après avoir terminé les demandes indispensables du brief (intégration du design, responsive) j'ai débuté la réalisation des interactions et animations de la page.
 
-Pour ce faire, j'ai d'abord listé les fonctionnalités visibles sur la maquette ainsi celles que je souhaitais. Ensuite, j'ai fais une à une ces fonctionnalités.
+Pour ce faire, j'ai d'abord listé les fonctionnalités visibles sur la maquette et d'autres que je souhaitais integrer. Ensuite, j'ai implémenté une à une ces fonctionnalités.
 
 ### Par exemple : 
 - Rendre fonctionnelle la galerie dans le header (carrousel) tout en rendant persistant l'ajout de likes (utilisation du localStorage pour l'exemple)
