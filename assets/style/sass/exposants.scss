@@ -6,6 +6,10 @@ section.exposants {
 	width: 100vw;
 	margin-bottom: 100px;
 	overflow-x: hidden;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
 img.item_link_arrow {
 	margin-left: 10px;
@@ -33,6 +37,7 @@ img.item_link_arrow {
 	align-self: flex-end;
 	z-index: 1;
 	margin-top: 100px;
+
 }
 .carousel_grab_wrap {
 	display: flex;
@@ -48,6 +53,9 @@ img.item_link_arrow {
 	border-radius: 50%;
 	cursor: grab;
 	.carousel_grab {
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
 		user-select: none;
 		display: flex;
 		align-items: center;
@@ -83,7 +91,6 @@ img.item_link_arrow {
 			width: 100%;
 			height: 319px;
 			pointer-events: none;
-			user-select: none;
 		}
 		p {
 			color: $base-color;
@@ -114,7 +121,6 @@ img.item_link_arrow {
 	overflow-y: hidden;
 	-ms-overflow-style: -ms-autohiding-scrollbar;
 	-webkit-overflow-scrolling: touch;
-	-ms-overflow-style: none; // IE 10+
 	overflow: -moz-scrollbars-none; // Firefox
 }
 @media screen and (max-width: 800px) {

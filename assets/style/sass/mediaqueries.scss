@@ -13,6 +13,9 @@
 				font-size: 1em;
 				line-height: 1.05em;
 			}
+			.item_link_image {
+				height: 31.25em;
+			}
 		}
 	}
 }
@@ -27,6 +30,9 @@
 			}
 			a {
 				font-size: 1em;
+			}
+			.item_link_image {
+				height: 25em;
 			}
 		}
 	}
@@ -46,7 +52,7 @@
 		}
 		.brand_logo {
 			img {
-				width: 10em;
+				width: 11em;
 			}
 		}
 	}
@@ -149,17 +155,19 @@
 
 			.footer_input_wrap {
 				width: 26em;
-				.footer_brand_logo {
-					right: 1em;
-					width: 1.5em;
-					padding-bottom: 1em;
-				}
 			}
-			.footer_brand_wrap {
-				margin-right: 2em;
+		}
+
+		.footer_brand_wrap {
+			// margin-right: 2em;
+			.footer_brand_logo {
+				right: 1em;
+				width: 17.5em;
+				height: 8.5em;
 			}
 		}
 	}
+
 	//ADVERTISEMENTS
 	section.advertisements {
 		height: 48em;
@@ -183,7 +191,7 @@
 	nav {
 		justify-content: center;
 		.header_nav_left li {
-			border-right: 1px solid #d1ceda;
+			border-right: 1px solid #d1ceda !important;
 		}
 		.brand_logo {
 			right: auto;
@@ -209,7 +217,7 @@
 		}
 		.header_nav_left {
 			:last-child {
-				border: none;
+				border: none !important;
 			}
 		}
 	}

@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Avenir-Book";
-  src: url("./fonts/Avenir-Book.woff2") format("woff2"), url("./fonts/Avenir-Book.woff") format("woff");
+  font-family: "AvenirBook";
+  src: url("AvenirBook.woff2") format("woff2"), url("AvenirBook.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -52,57 +52,6 @@
 
 .reveal-loaded .reveal-7 {
   transition-delay: 0.6s;
-}
-
-.reveal-loaded .categories_list .reveal [class*=reveal-] {
-  opacity: 0 !important;
-  transform: translateY(-30px) !important;
-  transition: opacity 0s, transform 0s !important;
-}
-
-.reveal-loaded .categories_list [class*=reveal-] {
-  transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1), transform 0.6s cubic-bezier(0.5, 0, 0, 1);
-  will-change: opacity;
-}
-
-.reveal-loaded .categories_list .reveal-2 {
-  transition-delay: 0.1s;
-}
-
-.reveal-loaded .categories_list .reveal-3 {
-  transition-delay: 0.2s;
-}
-
-.reveal-loaded .categories_list .reveal-4 {
-  transition-delay: 0.3s;
-}
-
-.reveal-loaded .categories_list .reveal-5 {
-  transition-delay: 0.4s;
-}
-
-.reveal-loaded .categories_list .reveal-6 {
-  transition-delay: 0.5s;
-}
-
-.reveal-loaded .categories_list .reveal-7 {
-  transition-delay: 0.6s;
-}
-
-.reveal-loaded .categories_list .reveal-8 {
-  transition-delay: 0.7s;
-}
-
-.reveal-loaded .categories_list .reveal-9 {
-  transition-delay: 0.8s;
-}
-
-.reveal-loaded .categories_list .reveal-10 {
-  transition-delay: 0.9s;
-}
-
-.reveal-loaded .categories_list .reveal-11 {
-  transition-delay: 1s;
 }
 
 .reveal-loaded .carousel_list .reveal [class*=reveal-] {
@@ -254,6 +203,13 @@ footer .footer_brand_wrap {
   justify-content: center;
   margin-right: 20px;
 }
+footer .footer_brand_logo {
+  width: 175px;
+  height: 85px;
+}
+footer .search_input_label {
+  visibility: hidden;
+}
 
 @media screen and (max-width: 1200px) {
   footer {
@@ -284,13 +240,20 @@ footer .footer_brand_wrap {
     margin: 40px 0 40px 0;
   }
   footer .footer_items {
-    flex-direction: column;
-    width: 260px;
+    flex-wrap: wrap;
+    width: 80%;
     margin-bottom: 150px;
   }
   footer .footer_item {
     margin: 0;
     margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  footer .footer_items {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
   }
 }
 .gallery {
@@ -332,7 +295,7 @@ footer .footer_brand_wrap {
 }
 .gallery_image_wrapper img {
   position: absolute;
-  top: 0;
+  top: -30px;
   right: 0;
   width: 100vw;
   object-fit: cover;
@@ -435,6 +398,19 @@ footer .footer_brand_wrap {
   }
   to {
     opacity: 1;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .gallery_right {
+    width: 26.5vw;
+    height: auto;
+  }
+  .gallery_right img {
+    height: 15vw;
+  }
+
+  .gallery {
+    min-height: 44.5vw;
   }
 }
 section.advertisements {
@@ -567,6 +543,10 @@ section.exposants {
   width: 100vw;
   margin-bottom: 100px;
   overflow-x: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 img.item_link_arrow {
@@ -614,6 +594,9 @@ img.item_link_arrow {
   cursor: grab;
 }
 .carousel_grab_wrap .carousel_grab {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   display: flex;
   align-items: center;
@@ -651,7 +634,6 @@ img.item_link_arrow {
   width: 100%;
   height: 319px;
   pointer-events: none;
-  user-select: none;
 }
 .carousel_list li p {
   color: #190d45;
@@ -682,7 +664,6 @@ img.item_link_arrow {
   overflow-y: hidden;
   -ms-overflow-style: -ms-autohiding-scrollbar;
   -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
 }
 
@@ -794,8 +775,8 @@ button:focus {
   font-weight: 700;
   line-height: 25px;
   letter-spacing: 1px;
-  font-family: "Libre Baskerville";
-  -webkit-text-stroke: solid 1px #190d45;
+  font-family: "Libre Baskerville", serif;
+  -webkit-text-stroke: 1px #190d45;
   color: #190d45;
   transform: translateX(-25px);
 }
@@ -847,6 +828,9 @@ nav {
   font-family: "Avenir-Medium";
   background: #fff;
   z-index: 2;
+}
+nav .header_nav_item:hover {
+  text-decoration: underline;
 }
 nav .brand_logo {
   position: absolute;
@@ -1010,6 +994,9 @@ nav .header_nav_left {
     font-size: 1em;
     line-height: 1.05em;
   }
+  .carousel_list li .item_link_image {
+    height: 31.25em;
+  }
 }
 @media screen and (min-width: 2400px) and (max-width: 2880px) {
   .carousel_list li {
@@ -1022,6 +1009,9 @@ nav .header_nav_left {
   }
   .carousel_list li a {
     font-size: 1em;
+  }
+  .carousel_list li .item_link_image {
+    height: 25em;
   }
 }
 @media screen and (min-width: 2400px) {
@@ -1037,7 +1027,7 @@ nav .header_nav_left {
     font-size: 1.1em;
   }
   nav .brand_logo img {
-    width: 10em;
+    width: 11em;
   }
 
   .section_title_wrap {
@@ -1134,13 +1124,10 @@ nav .header_nav_left {
   footer .footer_item .footer_input_wrap {
     width: 26em;
   }
-  footer .footer_item .footer_input_wrap .footer_brand_logo {
+  footer .footer_brand_wrap .footer_brand_logo {
     right: 1em;
-    width: 1.5em;
-    padding-bottom: 1em;
-  }
-  footer .footer_item .footer_brand_wrap {
-    margin-right: 2em;
+    width: 17.5em;
+    height: 8.5em;
   }
 
   section.advertisements {
@@ -1166,7 +1153,7 @@ nav .header_nav_left {
     justify-content: center;
   }
   nav .header_nav_left li {
-    border-right: 1px solid #d1ceda;
+    border-right: 1px solid #d1ceda !important;
   }
   nav .brand_logo {
     right: auto;
@@ -1191,7 +1178,7 @@ nav .header_nav_left {
     display: none;
   }
   nav .header_nav_left :last-child {
-    border: none;
+    border: none !important;
   }
 
   .gallery_right {

@@ -85,6 +85,14 @@ footer {
 		justify-content: center;
 		margin-right: 20px;
 	}
+
+	.footer_brand_logo {
+		width: 175px;
+		height: 85px;
+	}
+	.search_input_label {
+		visibility: hidden;
+	}
 }
 @media screen and (max-width: 1200px) {
 	footer {
@@ -115,13 +123,22 @@ footer {
 			margin: 40px 0 40px 0;
 		}
 		.footer_items {
-			flex-direction: column;
-			width: 260px;
+			flex-wrap: wrap;
+			width: 80%;
 			margin-bottom: 150px;
 		}
 		.footer_item {
 			margin: 0;
 			margin-bottom: 40px;
+		}
+	}
+}
+@media screen and (max-width: 500px) {
+	footer {
+		.footer_items {
+			flex-direction: column;
+			flex-wrap: wrap;
+			width: 80%;
 		}
 	}
 }

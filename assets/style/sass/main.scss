@@ -32,8 +32,8 @@ button:focus{
 		font-weight: 700;
 		line-height: 25px;
 		letter-spacing: 1px;
-		font-family: "Libre Baskerville";
-		-webkit-text-stroke: solid 1px $base-color;
+		font-family: "Libre Baskerville", serif;
+		-webkit-text-stroke: 1px $base-color;
 		color: $base-color;
 		transform: translateX(-25px);
 	}

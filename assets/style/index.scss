@@ -4,8 +4,9 @@ $third-color: #dddbe3;
 $nav-height: 90px;
 
 @font-face {
-	font-family: "Avenir-Book";
-	src: url("./fonts/Avenir-Book.woff2") format("woff2"), url("./fonts/Avenir-Book.woff") format("woff");
+    font-family: 'AvenirBook';
+    src: url('AvenirBook.woff2') format('woff2'),
+        url('AvenirBook.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;

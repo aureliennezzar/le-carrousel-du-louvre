@@ -33,7 +33,7 @@
 	height: 55vw;
 	img {
 		position: absolute;
-		top: 0;
+		top: -30px;
 		right: 0;
 		width: 100vw;
 		object-fit: cover;
@@ -121,4 +121,16 @@
 @keyframes animate_images{
 	from{opacity: 0.5;}
 	to{opacity: 1;}
+}
+@media screen and (min-width:1400px){
+	.gallery_right{
+		width: 26.5vw;
+		height: auto;
+		img{
+			height: 15vw;
+		}
+	}
+	.gallery{
+		min-height: 44.5vw;
+	}
 }

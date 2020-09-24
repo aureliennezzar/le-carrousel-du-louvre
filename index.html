@@ -3,11 +3,53 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>Carrousel du Louvre</title>
-	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CARROUSEL DU LOUVRE</title>
+	<meta name="description" content="Le Carrousel du Louvre est un centre commercial situé à Paris, entre le musée du Louvre et le jardin des Tuileries, en dessous de la pyramide inversée du Louvre.">
+	<meta itemprop="image" content="https://firebasestorage.googleapis.com/v0/b/carrousel-du-louvre.appspot.com/o/carrousel_og.png?alt=media&token=868ae957-8f10-45a7-87c3-e1e1473b1588">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="CARROUSEL DU LOUVRE">
+	<meta name="twitter:description"
+		content="Le Carrousel du Louvre est un centre commercial situé à Paris, entre le musée du Louvre et le jardin des Tuileries, en dessous de la pyramide inversée du Louvre.">
+	<meta name="twitter:image"
+		content="https://firebasestorage.googleapis.com/v0/b/carrousel-du-louvre.appspot.com/o/carrousel_og_twitter.png?alt=media&token=f003ef39-204f-4ada-aded-9a7dceb084a5">
+
+	<meta property="og:site_name" content="CARROUSEL DU LOUVRE">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="CARROUSEL DU LOUVRE">
+	<meta property="og:description"
+		content="Le Carrousel du Louvre est un centre commercial situé à Paris, entre le musée du Louvre et le jardin des Tuileries, en dessous de la pyramide inversée du Louvre.">
+	<meta property="og:image"
+		content="https://firebasestorage.googleapis.com/v0/b/carrousel-du-louvre.appspot.com/o/carrousel_og.png?alt=media&token=868ae957-8f10-45a7-87c3-e1e1473b1588">
+
+	<meta name="Author" content="Aurélien NEZZAR">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="./assets/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="./assets/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./assets/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./assets/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./assets/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./assets/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./assets/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./assets/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./assets/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./assets/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./assets/style/index.css">
+
+	<script type="text/javascript" src="./assets/js/checkMobile.js"></script>
 	<script type="text/javascript" src="./assets/js/app.js" defer></script>
+	<script type="text/javascript" src="./assets/js/scrollReveal.js" defer></script>
+	<script type="text/javascript" src="./assets/js/gallery.js" defer></script>
+	<script type="text/javascript" src="./assets/js/navBurger.js" defer></script>
+	<script type="text/javascript" src="./assets/js/carouselGrab.js" defer></script>
 </head>
 
 <body id="body">
@@ -22,12 +64,13 @@
 
 		<!-- NAVBAR-->
 		<nav class="header_nav">
-			<a href="#" rel="home" class="brand_logo">
-				<img src="./assets/img/carrousel-logo.png" alt="" srcset="">
+			<a href="" rel="home" class="brand_logo" aria-label="Home">
+				<img src="./assets/img/carrousel-logo.svg" alt="Brand logo" srcset="">
 			</a>
 			<ul class="header_nav_left header_nav_list">
 				<li class="header_nav_item subnav">
-					<span class="header_nav_link">oeuvres<img src="./assets/img/down-arrow.svg" alt="" srcset="">
+					<span class="header_nav_link">oeuvres<img src="./assets/img/down-arrow.svg" alt="Down arrow"
+							srcset="">
 					</span>
 				</li>
 				<li class="header_nav_item">exposants</li>
@@ -40,7 +83,7 @@
 			</ul>
 
 			<!-- BURGER-->
-			<button class="header_nav_burger">
+			<button class="header_nav_burger" aria-label="Open nav menu">
 				<span class="burger_bar"></span>
 				<span class="burger_bar"></span>
 				<span class="burger_bar"></span>
@@ -49,8 +92,8 @@
 				<div class="burger_menus_wrap">
 					<ul class="nav_burger_first nav_burger_list">
 						<li class="nav_burger_item burger_subnav">
-							<span class="header_nav_link">oeuvres<img src="./assets/img/down-arrow-white.svg" alt=""
-									srcset="">
+							<span class="header_nav_link">oeuvres<img src="./assets/img/down-arrow-white.svg"
+									alt="Down arrow" srcset="">
 							</span>
 						</li>
 						<li class="nav_burger_item">exposants</li>
@@ -69,31 +112,32 @@
 		<section class="gallery">
 			<div class="gallery_left">
 				<div class="gallery_image_wrapper">
-					<img class="gallery_img gallery_img0" src="./assets/img/header1.png" alt="gallery picture"
+					<img class="gallery_img gallery_img0" src="./assets/img/header1.jpeg" alt="gallery picture"
 						srcset="">
 				</div>
 
 				<div class="gallery_footer">
 					<div class="gallery_data_wrap">
 						<span class="gallery_progress"></span>
-						<div class="gallery_data reveal">
-							<h2 class="gallery_image_title reveal-1">Venise, le môle à l'entrée du grand canal et la
+						<div class="gallery_data globalReveal reveal">
+							<h2 class="gallery_image_title globalReveal reveal-1">Venise, le môle à l'entrée du grand canal et la
 								Salute.</h2>
-							<p class="gallery_image_meta reveal-2">eugene boudin, 1885 / galerie perrotin</p>
+							<p class="gallery_image_meta globalReveal reveal-2">eugene boudin, 1885 / galerie perrotin</p>
 						</div>
 						<div class="gallery_button gallery_like_data">
 							<img class="like_image" src="./assets/img/hearth-empty.png" alt="like button" srcset="">
 						</div>
 					</div>
 					<div class="gallery_buttons">
-						<button class="gallery_button gallery_like">
+						<button class="gallery_button gallery_like" aria-label="Like image">
 							<img class="like_image" src="./assets/img/hearth-empty.png" alt="like button" srcset="">
 						</button>
-						<button class="gallery_button gallery_larrow gallery_arrow">
+						<button class="gallery_button gallery_larrow gallery_arrow"
+							aria-label="Switch to previous image">
 							<img src="./assets/img/left-arrow.svg" alt="left arrow" srcset="">
 
 						</button>
-						<button class="gallery_button gallery_rarrow gallery_arrow">
+						<button class="gallery_button gallery_rarrow gallery_arrow" aria-label="Switch to next image">
 							<img src="./assets/img/right-arrow.svg" alt="right arrow" srcset="">
 
 						</button>
@@ -102,12 +146,12 @@
 			</div>
 
 			<div class="gallery_right">
-				<img class="gallery_right_img gallery_img3" src="./assets/img/header4.png" alt="" srcset=""
-					class="gallery_image">
-				<img class="gallery_right_img gallery_img2" src="./assets/img/header3.png" alt="" srcset=""
-					class="gallery_image">
-				<img class="gallery_right_img gallery_img1" src="./assets/img/header2.png" alt="" srcset=""
-					class="gallery_image">
+				<img class="gallery_right_img gallery_img3" src="./assets/img/header4.jpeg" alt="gallery picture"
+					srcset="" class="gallery_image">
+				<img class="gallery_right_img gallery_img2" src="./assets/img/header3.jpeg" alt="gallery picture"
+					srcset="" class="gallery_image">
+				<img class="gallery_right_img gallery_img1" src="./assets/img/header2.jpeg" alt="gallery picture"
+					srcset="" class="gallery_image">
 			</div>
 		</section>
 	</header>
@@ -122,16 +166,16 @@
 				<h2 class="section_title">les exposants</h2>
 			</div>
 			<div class="carousel">
-				<ul class="carousel_list reveal">
+				<ul class="carousel_list globalReveal reveal">
 					<!-- generated with javascript -->
 				</ul>
 				<div class="carousel_grab_wrap">
 					<div class="carousel_grab">
-						<img src="./assets/img/arrows.svg" alt="" srcset="">
+						<img src="./assets/img/arrows.svg" alt="double horizontal arrow" srcset="">
 					</div>
 				</div>
 			</div>
-			<button class="exposants_button">voir plus d'exposants</button>
+			<button class="exposants_button" aria-label="See more">voir plus d'exposants</button>
 
 		</section>
 
@@ -147,20 +191,20 @@
 		</section>
 
 		<!-- ADVERTISEMENTS SECTION -->
-		<section class="advertisements">
+		<section class="advertisements reveal">
 			<div class="advertisements_bg"></div>
 			<div class="advertisements_wrapper">
-				<img src="./assets/img/ad1.png" alt="" srcset="">
-				<img src="./assets/img/ad2.png" alt="" srcset="">
+				<img class="reveal-1" src="./assets/img/pub1.jpeg" alt="Advertisement" srcset="">
+				<img class="reveal-2" src="./assets/img/pub2.jpeg" alt="Advertisement" srcset="">
 			</div>
 		</section>
 	</main>
 
 	<!-- FOOTER -->
 	<footer>
-		<div class="footer_items reveal">
+		<div class="footer_items">
 			<div class="footer_brand_wrap">
-				<img class="footer_brand_logo" src="./assets/img/Bitmap.png" alt="Brand logo" srcset="">
+				<img class="footer_brand_logo" src="./assets/img/carrousel-logo.svg" alt="Brand logo" srcset="">
 			</div>
 
 			<div class="footer_item">
@@ -182,7 +226,7 @@
 			</div>
 
 			<div class="footer_item footer_input_wrap">
-				<input type="text" placeholder="recherche" class="footer_search_input">
+				<input type="text" name="search_input" placeholder="recherche" class="footer_search_input">
 				<img src="./assets/img/search-icon.svg" alt="search icon" srcset="">
 			</div>
 		</div>
