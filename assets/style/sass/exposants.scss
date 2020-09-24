@@ -1,4 +1,5 @@
 section.exposants {
+	scroll-margin-top: 110px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -87,6 +88,9 @@ img.item_link_arrow {
 		justify-content: space-around;
 		word-wrap: break-word;
 		margin-right: 30px;
+		a {
+			text-decoration: none;
+		}
 		.item_link_image {
 			width: 100%;
 			height: 319px;
