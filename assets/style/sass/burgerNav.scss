@@ -46,8 +46,10 @@
 			width: 80%;
 			cursor: pointer;
 			a {
+				width: 100%;
+				height: 100%;
 				text-decoration: none;
-				color: $base-color;
+				color: #fff;
 			}
 		}
 	}

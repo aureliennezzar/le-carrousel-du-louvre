@@ -3,6 +3,15 @@ let burgerNavOpened = false
 const navBurger = document.querySelector('.header_nav_burger')
 const navBurgerWrap = document.querySelector('.burger_menus_wrap')
 const burgerAnimation = document.querySelector('.burger_animate')
+// const exposantsLinks = document.querySelectorAll('.exposantsLink')
+
+// for (link of exposantsLinks) {
+// 	link.onclick = () => {
+// 		window.scrollY-=110
+// 		const exposantSection = document.querySelector(".exposants")
+// 		exposantSection.scrollIntoView()
+// 	}
+// }
 //Listen for click on burger
 navBurger.addEventListener('click', () => {
 	if (burgerNavOpened) {

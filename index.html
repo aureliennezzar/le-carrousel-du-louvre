@@ -44,12 +44,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./assets/style/index.css">
 
-	<script type="text/javascript" src="./assets/js/checkMobile.js"></script>
+	<script type="text/javascript" src="./assets/js/checkMobile.js" defer></script>
 	<script type="text/javascript" src="./assets/js/app.js" defer></script>
 	<script type="text/javascript" src="./assets/js/scrollReveal.js" defer></script>
+	<script type="text/javascript" src="./assets/js/exposants.js" defer></script>
 	<script type="text/javascript" src="./assets/js/gallery.js" defer></script>
-	<script type="text/javascript" src="./assets/js/navBurger.js" defer></script>
-	<script type="text/javascript" src="./assets/js/carouselGrab.js" defer></script>
+	<script type="text/javascript" src="./assets/js/nav.js" defer></script>
 </head>
 
 <body id="body">
@@ -73,7 +73,7 @@
 							srcset="">
 					</span>
 				</li>
-				<li class="header_nav_item">exposants</li>
+				<li class="header_nav_item"><a href="#exposants">exposants</a> </li>
 				<li class="header_nav_item">rdv virtuel</li>
 			</ul>
 			<ul class="header_nav_right header_nav_list">
@@ -96,7 +96,7 @@
 									alt="Down arrow" srcset="">
 							</span>
 						</li>
-						<li class="nav_burger_item">exposants</li>
+						<li class="nav_burger_item"><a href="#exposants">exposants</a></li>
 						<li class="nav_burger_item">rdv virtuel</li>
 					</ul>
 					<ul class="nav_burger_second nav_burger_list">
@@ -160,7 +160,7 @@
 	<main>
 
 		<!-- EXPOSANTS CAROUSEL SECTION -->
-		<section class="exposants">
+		<section class="exposants" id="exposants">
 			<div class="section_title_wrap">
 				<div class="section_title_circle"></div>
 				<h2 class="section_title">les exposants</h2>

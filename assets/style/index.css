@@ -931,8 +931,10 @@ nav .header_nav_left {
   cursor: pointer;
 }
 .nav_burger_menu .nav_burger_list li a {
+  width: 100%;
+  height: 100%;
   text-decoration: none;
-  color: #190d45;
+  color: #fff;
 }
 .nav_burger_menu .nav_burger_second :last-child {
   border: none;
