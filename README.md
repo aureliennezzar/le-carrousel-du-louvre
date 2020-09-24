@@ -11,14 +11,14 @@ Le temps imparti pour ce projet était d'une semaine. Durant cette semaine, j'ai
 Dans un premier temps, il était nécessaire de réaliser la structure de la page après avoir analysé les besoins techniques pour la réalisation de la maquette.
 Ainsi, j'ai tout de suite organisé mes dossiers en y intégrant les ressources fournies par la maquette.
 
-Une fois que la structure sans responsive et statique était terminée j'ai alors commencé l'aspect "responsive" jusqu'à 320px de largeur, rendant le site compatible avec tout type d'appareils (desktop, mobile ou tablette), par conséquent, j'ai testé la comptabilité Cross-Browser et Cross-Platform.
+Une fois que la structure sans responsive et statique était terminée, j'ai alors commencé l'aspect "responsive" jusqu'à 320px de largeur, rendant le site compatible avec tout type d'appareils (desktop, mobile ou tablette), aussi, j'ai testé la comptabilité Cross-Browser et Cross-Platform.
 
 Après avoir terminé les demandes indispensables du brief (intégration du design, responsive) j'ai débuté la réalisation des interactions et animations de la page.
 
-Pour ce faire, j'ai d'abord listé les fonctionnalités visibles sur la maquette et d'autres que je souhaitais integrer. Ensuite, j'ai implémenté une à une ces fonctionnalités.
+Pour ce faire, j'ai d'abord listé les fonctionnalités visibles sur la maquette et d'autres que je souhaitais intégrer. Ensuite, j'ai implémenté une à une ces fonctionnalités.
 
 ### Par exemple : 
-- Rendre fonctionnelle la galerie dans le header (carrousel) tout en rendant persistant l'ajout de likes (utilisation du localStorage pour l'exemple)
+- Rendre fonctionnel la galerie dans le header (carrousel) tout en rendant l'ajout de likes persistant (utilisation du localStorage pour l'exemple)
 - Mise en place d'une fonction "grab" sur la section "exposants" permettant le défilement du carrousel (section exposants), ce dernier sera uniquement utilisable sur desktop, remplacé par un "swipe" sur mobile ou tablette.
 - Ajout personnel d'un effet d'apparition au défilement de la page (scroll reveal) sur certains éléments.
 - Effet parallax sur l'image principale du header.
