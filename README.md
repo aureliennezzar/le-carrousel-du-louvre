@@ -1,5 +1,8 @@
 # Le Carrousel du Louvre [FR]
 
+### Installation : 
+Lancer la commande `live-server` à la racine du projet.
+
 ## Brief : 
 Il m'était demandé d'intégrer une maquette dans le but de faire la refonte d'une page d'accueil d'un site (Le Carrousel du Louvre).
 Le temps imparti pour ce projet était d'une semaine. Durant cette semaine, j'ai eu l'occasion de m'organiser par étapes.
@@ -26,6 +29,9 @@ Pour ce faire, j'ai d'abord listé les fonctionnalités visibles sur la maquette
 - Création du favicon
 
 # The Carrousel du Louvre [EN].
+
+### Installation : 
+Launch the `live-server` command at the root of the project.
 
 ## Brief : 
 I was asked to integrate a mock-up in order to redesign a homepage of a site (Le Carrousel du Louvre).
